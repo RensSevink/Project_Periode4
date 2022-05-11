@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: WonderHome
+* Template Name: About us Wonder
 **/
 $title = get_the_title();
 $content = get_the_content();
@@ -11,4 +11,4 @@ $buttonGroup = [$homeButton, $adminButton];
 
 
 render('views/templates/home.php', ['title' => $title, 'content' => $content, 'buttonGroup' => $buttonGroup]);?>
-home
+about us
