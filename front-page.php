@@ -2,13 +2,18 @@
 /**
 * Template Name: WonderHome
 **/
-$title = get_the_title();
-$content = get_the_content();
 
-$homeButton = ['url' => get_home_url(), 'title' => 'Klik hier voor de homepage', 'class' => null];
-$adminButton = ['url' => get_home_url() . '/wp-admin', 'title' => 'Klik om in de admin dashboard te komen', 'class' => 'admin-btn'];
-$buttonGroup = [$homeButton, $adminButton];
+get_header();
 
+?>
 
-render('views/templates/home.php', ['title' => $title, 'content' => $content, 'buttonGroup' => $buttonGroup]);?>
-home
+<section class="page-wrap">
+<div class="container">
+        <h1><?php the_title();?></h1>
+        
+
+        <?php get_template_part('includes/section', 'content');?>
+</div>
+</section>
+
+<?php get_footer(); ?>

@@ -12,3 +12,13 @@ THIS FILE WILL NOT BE USED FOR ANY STYLING PURPOSES!
 
 CSS Inclusion can be found within /views/organisms/head.php
 */
+
+header {
+    background:#111;
+    width: 100%;
+    height: 100px;
+}
+
+.page-wrap {
+    padding: 2rem 0;
+}
